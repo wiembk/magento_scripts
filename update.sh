@@ -36,7 +36,8 @@ while true; do
             echo -e "\e[32mRunning all commands\e[0m"
             bin/magento setup:upgrade
             bin/magento setup:di:compile
-            bin/magento clean
+            bin/magento cache:clean
+            bin/magento cache:flush
             bin/magento indexer:reindex
             ;;
         6)
