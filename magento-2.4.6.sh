@@ -150,7 +150,8 @@ cat <<EOF | sudo tee /etc/apache2/sites-available/000-default.conf > /dev/null
 EOF
 sudo systemctl restart apache2
 sudo chmod -R 777 var pub/static generated generated/
-sudo php bin/magento module:disable Magento_TwoFactorAuth
+sudo php bin/magento indexer:reindex && sudo php bin/magento se:up && sudo php bin/magento se:s:d -f && sudo php bin/magento c:f && sudo php bin/magento module:disable Magento_TwoFactorAuth Magento_AdminAdobeImsTwoFactorAuth  
+
 echo -e "\e[32mFlushing The Cache\e[0m"  # Green color
 
 sudo php bin/magento cache:flush
