@@ -43,7 +43,7 @@ then
                 bin/magento maintenance:enable
                 bin/magento setup:upgrade
                 bin/magento setup:di:compile
-                bin/magento s:d:d -f
+                bin/magento s:s:d -f
                 bin/magento cache:clean
                 bin/magento cache:flush
                 bin/magento maintenance:disable
@@ -97,7 +97,7 @@ elif [ "$1" == "--fast" ]; then
                 sudo gonit stop apache
                 bin/magento setup:upgrade
                 bin/magento setup:di:compile
-                bin/magento s:d:d -f
+                bin/magento s:s:d -f
                 bin/magento cache:clean
                 bin/magento cache:flush
                 sudo gonit start apache
@@ -112,5 +112,5 @@ elif [ "$1" == "--fast" ]; then
         esac
     done
 else
-    echo "Invalid argument. Please use --safe or --fast."
+    echo -e "\e[31mInvalid argument. Please use \e[0m--safe\e[31m or \e[0m--fast\e[31m.\e[0m"
 fi
