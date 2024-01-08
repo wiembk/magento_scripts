@@ -157,5 +157,8 @@ echo -e "\e[32mFlushing The Cache\e[0m"  # Green color
 sudo php bin/magento cache:flush
 sudo php bin/magento cache:clean
 
+# echo -e "\e[32mInstall Sample data for magento\e[0m"  # Green color
+# sudo php bin/magento sampledata:deploy && sudo php bin/magento indexer:reindex && sudo php bin/magento se:up && sudo php bin/magento se:s:d -f && sudo php bin/magento c:f
+
 echo "***************Magento 2 setup completed.***********"
 sudo su ${OSUser}
