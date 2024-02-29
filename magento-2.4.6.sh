@@ -14,15 +14,17 @@
 # trap 'handle_error' ERR
 
 ######################### Input funct° Parameters
-BaseUrl='18.100.133.232'
+BaseUrl='35.158.246.19'
 DBHost='localhost'
 DBName='magento2'
-DBPassword='wiem1234'
+DBPassword='wiem2202'
 AdminUser='admin'
-AdminPassword='wiem1234'
+AdminPassword='wiem2202'
 PublicKey='49d1c54d206e19340755129627d96bf6'
 PrivateKey='db060a47cee75868043aa97359427ccf'
 OSUser='ubuntu'
+Git_repo=''
+Git_name=''
 
 
 #################### Update and install Apache

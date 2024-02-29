@@ -14,17 +14,17 @@
 # trap 'handle_error' ERR
 
 ######################### Input funct° Parameters
-BaseUrl='localhost'
+BaseUrl='18.153.33.79'
 DBHost='localhost'
 DBName='magento2'
-DBPassword='wiem1234'
+DBPassword='wiem2202'
 AdminUser='admin'
-AdminPassword='wiem1234'
+AdminPassword='wiem2202'
 PublicKey='49d1c54d206e19340755129627d96bf6'
 PrivateKey='db060a47cee75868043aa97359427ccf'
 OSUser='ubuntu'
-Git_repo=''
-Git_name=''
+Git_repo='git@gitlab.com:wiemboubakri21/wamia-2.4.3.git'
+Git_name='wamia-2.4.3'
 
 
 #################### Update and install Apache

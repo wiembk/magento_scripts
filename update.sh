@@ -1,8 +1,9 @@
 #!/bin/bash
+# DESCRIPTION: Refreshes magento in one command , you can use --safe tag to make it with maintenance mode.
+# It performs a specific task or operation.
 
-
-cd /var/www/html/magento2
-if [ "$1" == "--safe" ]
+# cd /var/www/html/magento2
+if [ "$1" == "--s" ]
 then
     while true; do
         echo "Running in safe mode..."
@@ -57,7 +58,7 @@ then
                 ;;
         esac
     done
-elif [ "$1" == "--fast" ]; then
+elif [ "$1" == "--f" ]; then
     while true; do
         echo "Running in fast mode..."
         echo "Choose a Magento command to run:"
@@ -112,5 +113,5 @@ elif [ "$1" == "--fast" ]; then
         esac
     done
 else
-    echo -e "\e[31mInvalid argument. Please use \e[0m--safe\e[31m or \e[0m--fast\e[31m.\e[0m"
+    echo -e "\e[31mInvalid argument. Please use \e[0m--s\e[31m or \e[0m--f\e[31m.\e[0m"
 fi
