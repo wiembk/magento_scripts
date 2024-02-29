@@ -1,5 +1,5 @@
 #!/bin/bash
-# DESCRIPTION: Refreshes magento in one command , you can use --safe tag to make it with maintenance mode.
+# DESCRIPTION: Refreshes magento in one command , you can use --s tag to make it with maintenance mode or --f to make it faster by stopping the Apache.
 # It performs a specific task or operation.
 
 # cd /var/www/html/magento2
