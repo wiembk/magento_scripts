@@ -31,7 +31,7 @@ then
                 bin/magento maintenance:disable
                 ;;
             3)
-                echo -e "\e[32mRunning: bin/magento clean"\e[0m
+                echo -e "\e[32mRunning: bin/magento clean\e[0m"
                 bin/magento cache:clean
                 bin/magento cache:flush
                 ;;
