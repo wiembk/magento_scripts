@@ -14,14 +14,14 @@
 # trap 'handle_error' ERR
 
 ######################### Input funct° Parameters
-BaseUrl='35.158.246.19'
+BaseUrl='localhost'
 DBHost='localhost'
 DBName='magento2'
-DBPassword='wiem2202'
+DBPassword='your_db_passwd'
 AdminUser='admin'
-AdminPassword='wiem2202'
-PublicKey='49d1c54d206e19340755129627d96bf6'
-PrivateKey='db060a47cee75868043aa97359427ccf'
+AdminPassword='your_admin_passwd'
+PublicKey='your_publicKey'
+PrivateKey='your_privateKey'
 OSUser='ubuntu'
 Git_repo=''
 Git_name=''
