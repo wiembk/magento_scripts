@@ -1,7 +1,7 @@
 # DESCRIPTION: Clone repository and add submodules, Install database and use it with magento 
 #!/bin/bash
 
-FILE_ID="1cSJNoMsYn7z6aCFuEYA_s1BKtKkX5reG"
+FILE_ID="fileID_drive"
 database_name="wamia.zip.gz"
 GDOWN_PATH="$HOME/.local/bin/gdown"
 TGT_USER='xxx'
